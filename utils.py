@@ -1,3 +1,4 @@
+import os
 from PIL import Image
 
 
@@ -16,3 +17,7 @@ def change_aspect_ratio(image_path):
     image.save(image_path)
 
     return image
+
+
+def env(name):
+    return os.getenv(name)
